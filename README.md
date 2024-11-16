@@ -12,11 +12,11 @@ Movie Details Modal: View additional information about a selected movie (e.g., p
 Responsive Design: Fully responsive and styled using Material-UI.
 
 # Tech Stack
-<ol>
-  <li>Frontend: React.js(via Vite)<li>
-<li>UI Library: Material-UI (MUI)</li>
-<li>API: OMDB API</li>
-</ol>
+<ul>
+  <li>Frontend: React.js(via Vite)</li>
+  <li>UI Library: Material-UI (MUI)</li>
+  <li>API: OMDB API</li>
+</ul>
 
 
 # Installation
