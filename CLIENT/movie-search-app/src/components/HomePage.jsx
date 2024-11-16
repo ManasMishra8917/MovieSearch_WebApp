@@ -53,7 +53,7 @@ const HomePage = () => {
   const closeModal = () => setIsModalOpen(false);
 
   return (
-    <Container sx={{ mt: 4 }}>
+    <Container sx={{ mt: 4 ,marginTop: '94px'}}>
       <TextField
         fullWidth
         label="Search for a movie..."
