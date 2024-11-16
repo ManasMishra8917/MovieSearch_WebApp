@@ -20,7 +20,7 @@ Responsive Design: Fully responsive and styled using Material-UI.
 
 
 # Installation
-```
+
 <h4>Clone the repository:</h4>
 git clone https://github.com/your-username/MovieSearch_WebApp.git
 <br>
@@ -41,4 +41,4 @@ VITE_OMDB_API_KEY=YOUR_API_KEY
 npm run dev
 <br>
 Open the app in your browser at http://localhost:5173/
-```
+
