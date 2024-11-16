@@ -3,6 +3,7 @@ import { Container, TextField, Grid, CircularProgress } from '@mui/material';
 import MovieCard from '../components/MovieCard';
 import MovieModal from '../components/MovieModal';
 
+
 const HomePage = () => {
   const [movies, setMovies] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
@@ -12,10 +13,12 @@ const HomePage = () => {
 
   const fetchMovies = async (query = '') => {
     setLoading(true);
-    const API_KEY = '8b2c07b9'; 
+    const API_KEY = import.meta.env.VITE_OMDB_API_KEY; 
+    
     const url = query
       ? `https://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`
       : `https://www.omdbapi.com/?s=popular&apikey=${API_KEY}`;
+      
     const response = await fetch(url);
     const data = await response.json();
     if (data.Response === 'True') {
