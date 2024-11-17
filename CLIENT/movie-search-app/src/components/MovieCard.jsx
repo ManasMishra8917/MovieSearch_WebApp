@@ -9,6 +9,7 @@ const MovieCard = ({ movie, onOpenModal }) => (
       justifyContent: 'space-between',
       height: '100%',
     }}
+    onClick={() => onOpenModal(movie)}
   >
     <Box
       sx={{
@@ -20,7 +21,7 @@ const MovieCard = ({ movie, onOpenModal }) => (
       }}
     />
     <CardContent>
-      <Typography gutterBottom variant="h6" component="div" align="center" onClick={() => onOpenModal(movie)}>
+      <Typography gutterBottom variant="h6" component="div" align="center">
         {movie.Title}
       </Typography>
       <Typography variant="body2" color="text.secondary" align="center">
